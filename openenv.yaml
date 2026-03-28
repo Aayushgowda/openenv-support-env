@@ -1,0 +1,22 @@
+name: support-triage-env
+description: AI customer support simulation environment
+
+observation:
+  ticket_id: string
+  customer_message: string
+  previous_messages: list
+  account_status: string
+  urgency_level: string
+
+action:
+  action_type: string
+  message: string
+  refund_amount: float
+
+reward:
+  range: [0.0, 1.0]
+
+tasks:
+  - easy
+  - medium
+  - hard
